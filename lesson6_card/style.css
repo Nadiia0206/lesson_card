@@ -1,0 +1,27 @@
+.card {
+  margin: 50px auto;
+  padding: 10px;
+  width: 250px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+.card__icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.card__tittle {
+  color: brown;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.card__description {
+  line-height: 1.5;
+  font-size: 15px;
+}
