@@ -16,6 +16,7 @@
 
 .card__tittle {
   color: brown;
+  width: 100%;
   font-weight: bold;
   font-size: 25px;
   margin-bottom: 15px;
