@@ -1,0 +1,318 @@
+.content {
+  width: 1290px;
+  padding: 0 75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 25px 0;
+}
+
+.lokalise_menu {
+  display: flex;
+  gap: 53px;
+}
+
+.main_menu {
+  display: flex;
+  gap: 53px;
+}
+
+.main_menu li {
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.menu_btn {
+  display: inline-block;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 0 36px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  color: black;
+}
+.menu_btn--orange {
+  border: none;
+  padding: 0 21px;
+  background-color: #FF6336;
+  color: white;
+  line-height: 47px;
+  box-sizing: border-box;
+}
+
+div > .menu_btn:last-child {
+  margin-right: 0;
+}
+
+.about_loca {
+  display: flex;
+}
+
+.main_tittle {
+  margin: 0;
+  margin-top: 122px;
+  margin-bottom: 50px;
+  width: 552px;
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 70px;
+  color: black;
+}
+
+.main_about {
+  margin-bottom: 50px;
+  width: 471px;
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px; 
+}
+
+.main_img {
+  margin-top: 122px;
+}
+
+.about_end {
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: black;
+  margin-top: 25px;
+  margin-bottom: 172px;
+}
+
+.bg_orange {
+  background-color: #FF9C7D;
+}
+
+.tittle {
+  padding: 108px 0;
+}
+
+.logo_tittle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper_control {
+  width: 493px;
+}
+
+.tittle_control {
+  margin: 0;
+  margin-top: 241px;
+  margin-bottom: 30px;
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.about_control {
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.start {
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.bg_yellow {
+  display: flex;
+  width: 638px;
+  height: 638px;
+  background-color: #FFF8E4;
+  margin-bottom: 150px;
+}
+
+.img_codes {
+  padding: 169px 69px;
+}
+
+.bg_light_yellow {
+  background-color: #FFF8E4;
+  padding-top: 120px;
+  padding-bottom: 147px;
+}
+
+.tittle_for_cards {
+  margin: 0;
+  margin-bottom: 79px;
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.card {
+  width: 326px;
+}
+
+.flex_cards {
+  display: flex;
+  gap: 108px;
+}
+
+.img_card {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+}
+
+.card_tittle {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  color: black;
+  text-align: center;
+}
+
+.card_description {
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.wrapper_boost {
+  padding-top: 154px;
+  padding-bottom: 187px;
+}
+
+.tittle_boost {
+  margin: 0;
+  margin-bottom: 75px;
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  color: black;
+}
+
+.card_boost {
+  width: 409px;
+}
+
+.img_card_boost {
+  margin-bottom: 49px;
+}
+
+.card_tittle_boost {
+  margin: 0;
+  margin-bottom: 34px;
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.option_boost {
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.learn {
+  color: black;
+  text-decoration: underline;
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.bg_blue {
+  background-color: #C9E8F2;
+  padding-top: 53px;
+  padding-bottom: 105px;
+}
+
+.about_revolut {
+  width: 920px;
+  font-family: 'Graphik LC TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 23px;
+}
+
+.name_revolut {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
