@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'Graphik LC TT';
+	src: url(../fonts/subset-GraphikLCG-Regular.woff2) format('woff2'),
+		url(../fonts/subset-GraphikLCG-Regular.woff) format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Graphik LC TT';
+	src: url(../fonts/subset-GraphikLCG-Semibold.woff2) format('woff2'),
+		url(../fonts/subset-GraphikLCG-Semibold.woff) format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
