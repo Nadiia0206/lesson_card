@@ -160,7 +160,7 @@ div>.menu_btn:last-child {
   width: 1290px;
   padding-top: 90px;
   padding-bottom: 150px;
-  gap: 250px;
+  gap: 140px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -171,6 +171,7 @@ div>.menu_btn:last-child {
   padding: 151px 0;
   gap: 30px;
   align-items: flex-start;
+  width: 50%;
 }
 
 .process_tittle {
@@ -212,7 +213,7 @@ div>.menu_btn:last-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 632px;
+  width: 50%;
   height: 632px;
 }
 
