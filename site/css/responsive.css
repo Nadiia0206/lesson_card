@@ -1,0 +1,202 @@
+@media screen and (max-width: 1290px) {
+  header, .menu_content, .process, .boost_section, .bg_quote, .bg_rates, .bg_logos, .bg_finish, .tool_section, .bg_cards {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .boost_section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .local_tittle {
+    text-align: center;
+  }
+
+  .all_cards {
+    margin: 0 auto;
+    gap: 25px;
+  }
+
+  .logo_cards {
+    justify-content: center;
+  }
+
+  .process {
+    gap: 100px;
+  }
+
+  .bg_square {
+    flex-shrink: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .rates {
+   flex-direction: column;
+   gap: 20px;
+  }
+
+  .rate_content {
+    gap: 5px;
+  }
+  
+  .rate_tittle {
+    text-align: center;
+  }
+
+  .rate_content--logo {
+    padding-left: 0;
+    border: none;
+  }
+
+  .finish {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .tittle_localization {
+    font-size: 50px;
+    line-height: 1.5;
+  }
+
+  .tool_section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .tool_tittle {
+    font-size: 45px;
+    line-height: 1.5;
+  }
+
+  .about_tool {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .quote_img {
+    margin-bottom: 15px;
+  }
+
+  .quote_content {
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+
+  .process {
+    flex-direction: column;
+    gap: 50px;
+    max-width: 768px;
+    padding-bottom: 80px;
+  }
+
+  .bg_square, .section {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu_content {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .menu_content__about, .menu_content__tittle {
+    width: 100%;
+  }
+
+  .menu_content__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu_content__item .img-responsive {
+    margin: 0 auto;
+  }
+
+  .menu_list {
+    gap: 25px;
+  }
+
+  .menu_logo {
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .menu__buttons .menu_btn:first-child {
+    display: none;
+  } 
+
+  .card {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper_finish {
+    flex-flow: row wrap;
+  }
+
+  .process {
+    padding-bottom: 30px;
+  }
+
+  .process_tittle {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+
+  .about_process {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .menu_content__tittle {
+    font-size: 40px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+
+  .menu_content__about {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+
+  .menu, .menu_list, .menu_logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu__buttons .menu_btn:first-child {
+    display: block;
+  }
+
+  .menu_content__item .menu_btn--primary {
+    margin-bottom: 10px;
+  }
+
+  .tittle_logos {
+    font-size: 35px;
+    line-height: 1.5;
+
+    margin-bottom: 35px;
+  }
+
+  .link_logos {
+    gap: 75px;
+    justify-content: center;
+  }
+
+  .logos {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+}
