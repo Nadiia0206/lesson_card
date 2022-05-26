@@ -32,9 +32,24 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .link_finish {
+    margin-bottom: 20px;
+  }
+
+  .rate_wrapper {
+    gap: 150px;
+  }
+
+  .logo_wrapper {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+  }
+
   .rates {
-   flex-direction: column;
-   gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .rate_content {
@@ -138,8 +153,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper_finish {
-    flex-flow: row wrap;
+  .rate_wrapper {
+    gap: 60px;
+  }
+
+  .logo_wrapper{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .boost_section {
+    flex-flow: row nowrap;
   }
 
   .process {
@@ -198,5 +222,11 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+}
 
+@media screen and (max-width: 578px) {
+  .wrapper_finish {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
 }

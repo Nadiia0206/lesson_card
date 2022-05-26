@@ -421,6 +421,13 @@ div>.menu_btn:last-child {
   margin-right: auto;
 }
 
+.logo_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+
 .rate_tittle {
   font-family: 'Graphik LC TT';
   font-style: normal;
@@ -428,6 +435,12 @@ div>.menu_btn:last-child {
   font-size: 35px;
   line-height: 50px;
   max-width: 461px;
+}
+
+.rate_wrapper {
+  max-width: 481px;
+  display: flex;
+  gap: 30px;
 }
 
 .rate_content {
@@ -446,6 +459,7 @@ div>.menu_btn:last-child {
 .rate_content--logo {
   border-left: 1px solid black;
   padding-left: 70px;
+  gap: 22px;
 }
 
 .tool_section {
@@ -579,7 +593,6 @@ div>.menu_btn:last-child {
 
 .wrapper_finish {
   display: flex;
-  justify-content: space-start;
   gap: 34px;
   font-family: 'Graphik LC TT';
 }
@@ -613,7 +626,6 @@ div>.menu_btn:last-child {
 
 .lokalise_finish {
   display: flex;
-  justify-content: space-between;
   max-width: 1290px;
   margin: 0 auto;
   padding-top: 52px;
