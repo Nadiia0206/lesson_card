@@ -1,0 +1,48 @@
+{
+  "name": "fe-boilerplate",
+  "version": "1.0.0",
+  "description": "Basic boilerplate for front-end apps",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start",
+    "images": "gulp images",
+    "scripts": "gulp scripts",
+    "styles": "gulp styles",
+    "cleanimg": "gulp cleanimg",
+    "html": "gulp html",
+    "cleandest": "gulp cleandest",
+    "fonts": "gulp fonts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilyaev/fe-boilerplate.git"
+  },
+  "keywords": [
+    "front-end",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Viktor Zhyliaiev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilyaev/fe-boilerplate/issues"
+  },
+  "homepage": "https://github.com/gilyaev/fe-boilerplate#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "del": "^6.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.52.1"
+  }
+}
