@@ -21,60 +21,57 @@
 	}
 
 	&__block {
-		text-align: center;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-items: center;
 
-		&>ul>li:first-child {
+		&--address {
 			color: $color__main;
-			font-family: 'Montserrat';
-			font-style: normal;
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 20px;
-			margin-bottom: 10px;
 		}
 
-		&>ul>li>a {
+		&--link {
+			display: flex;
+			align-items: center;
 			color: $color__active--regular;
-			font-family: 'Montserrat';
-			font-style: normal;
 			font-weight: 700;
 			font-size: 12px;
-			line-height: 15px;
-			letter-spacing: 1px;
 			text-transform: uppercase;
+			letter-spacing: 1px;
+			line-height: 15px;
 		}
 	}
 
 	&__block2 {
-		text-align: center;
-
-		&>ul>li {
-			margin-bottom: 10px;
-		}
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-items: center;
 
 		&--number {
-			font-family: 'Montserrat';
-			font-style: normal;
+			display: flex;
+			align-items: center;
+			color: $color__main;
 			font-weight: 700;
 			font-size: 16px;
 			line-height: 20px;
-			color: $color__main;
 		}
 
-		&>ul>li>a {
-			margin-bottom: 0;
-			font-family: 'Montserrat';
-			font-style: normal;
+		&--email {
+			display: flex;
+			align-items: center;
+			color: $color__active--regular;
 			font-weight: 700;
 			font-size: 16px;
 			line-height: 20px;
-			color: $color__active--regular;
 		}
 	}
 
 	&__block3 {
 		text-align: center;
-		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 400;
 		font-size: 16px;
@@ -83,6 +80,71 @@
 	}
 
 	@media screen and (min-width: 376px) {
+		&__block {
+			flex-direction: row;
 
+			&--link::before {
+				content: "";
+				display: inline-block;
+				height: 6px;
+				width: 6px;
+				background-color: $color__grey--text;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+		}
+
+		&__block2 {
+			flex-direction: row;
+
+			&--number::before {
+				content: "";
+				display: inline-block;
+				height: 6px;
+				width: 6px;
+				background-color: $color__grey--text;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+
+			&--email::before {
+				content: "";
+				display: inline-block;
+				height: 6px;
+				width: 6px;
+				background-color: $color__grey--text;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		& {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+		
+		&__wrapper {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+	}
+
+	@media screen and (min-width: 1440px) {	
+		&__block2--svg:hover path {
+			fill: $color__accent;
+		}
+
+		&__block2--email:hover {
+			color: $color__accent;
+		}
+	}
+
+	@media screen and (min-width: 1920px) {
+		padding-left: 160px;
+		padding-right: 160px;
 	}
 }

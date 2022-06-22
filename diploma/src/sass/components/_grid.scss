@@ -1,0 +1,97 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+.c-clients {
+	display: flex;
+	height: 120px;
+	align-items: center;
+	justify-content: center;
+	background-color: #1C4280;
+
+	&_wannabiz {
+		background-color: #143646;
+	}
+
+	&_tapgerine {
+		background-color: #F48B30;
+	}
+
+	&_3dlook {
+		background-color: #9E4DC3;
+	}
+
+	&_orangear {
+		background-color: #FD9339;
+	}
+
+	&_adtelligent {
+		background-color: #E2E2E4;
+	}
+
+	&_clickky {
+		background-color: #C71C36;
+	}
+
+	&_eco {
+		background-color: #DCF3F9;
+	}
+
+	&_ingratek {
+		background-color: #EAEAEA;
+	}
+
+	&_citypark {
+		background-color: #282240;
+	}
+
+	&_artprint {
+		background-color: #1D4568;
+	}
+
+	&_ultimatecard {
+		background-color: #000000;
+	}
+}
+
+.l-clients {
+	display: grid;
+
+	grid-template-columns: 1fr;
+
+	& .c-clients:nth-child(n+7) {
+		display: none;
+	}
+
+	&_tittle {
+	  font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: $color__main;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	@media screen and (min-width: 568px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media screen and (min-width: 768px) {
+		grid-template-columns: repeat(3, 1fr);
+
+		& .c-clients:nth-child(n) {
+			display: flex;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	@media screen and (min-width: 1920px) {
+		border-radius: 12px;
+		margin: 0 100px;
+		overflow: hidden;
+	}
+}
