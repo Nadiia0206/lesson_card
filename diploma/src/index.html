@@ -18,13 +18,13 @@
       <div class="header__section">
         <div class="header__bg">
           <ul class="header__languages">
-            <li class="header__lang"><a href="#">УК</a></li>
-            <li class="header__lang"><a href="#">РУ</a></li>
-            <li class="header__lang header__lang--en"><a href="#">EN</a></li>
+            <li><a href="#" class="header__lang">УК</a></li>
+            <li><a href="#" class="header__lang">РУ</a></li>
+            <li><a href="#" class="header__lang header__lang--active">EN</a></li>
           </ul>
           <ul class="header__contacts">
-            <li class="header__contacts--address">Kyiv, Mechnikova str., 14/1</li>
-            <li class="header__contacts--number">0800 211 927</li>
+            <li class="header__address">Kyiv, Mechnikova str., 14/1</li>
+            <li class="header__number">0800 211 927</li>
             <li>
               <svg class="header__svg" width="39" height="38" viewBox="0 0 39 38" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -42,16 +42,36 @@
             </li>
           </ul>
         </div>
-        <a class="header__logo" href="#"><img src="img/hlegal_logo.png" alt=""></a>
-        <nav>
-          <ul class="navigation">
-            <li class="navigation__link"><a href="#">about us</a></li>
-            <li class="navigation__link"><a href="">services</a></li>
-            <li class="navigation__link"><a href="">team</a></li>
-            <li class="navigation__link"><a href="">publications</a></li>
-            <li class="navigation__link"><a href="">contact</a></li>
-          </ul>
-        </nav>
+
+        <div class="header__menu">
+          <a class="header__logo" href="#"><img src="img/hlegal_logo.png" alt=""></a>
+          <label for="menu-toggle">
+            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 10.5H25" stroke="white" stroke-width="2" />
+              <path d="M7 16.5H25" stroke="white" stroke-width="2" />
+              <path d="M7 22.5H25" stroke="white" stroke-width="2" />
+            </svg>
+          </label>
+          <input type="checkbox" id="menu-toggle">
+          <div class="l-menu-wrapper">
+            <div class="l-menu-container">
+              <label for="menu-toggle">
+                <svg class="c-close" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                  <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+                </svg>
+              </label>
+              <ul class="l-menu">
+                <li><a href="#" class="l-menu__hover">about us</a></li>
+                <li><a href="#" class="l-menu__hover">services</a></li>
+                <li><a href="#" class="l-menu__hover">team</a></li>
+                <li><a href="#" class="l-menu__hover">publications</a></li>
+                <li><a href="#" class="l-menu__hover">contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <h3 class="intro__tittle">you legal solutions provider</h3>
         <a href="#" class="intro__tittle--scroll">
           <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,10 +84,10 @@
 
     <div class="experience">
       <ul class="experience__list">
-        <li class="experience__list--main experience__list--active"><a href="#">Consistent</a></li>
-        <li class="experience__list--main"><a href="#">Customer oriented</a></li>
-        <li class="experience__list--main"><a href="#">Innovative</a></li>
-        <li class="experience__list--main"><a href="#">Business oriented</a></li>
+        <li><a href="#" class="experience__list--main experience__list--active">Consistent</a></li>
+        <li><a href="#" class="experience__list--main">Customer oriented</a></li>
+        <li><a href="#" class="experience__list--main">Innovative</a></li>
+        <li><a href="#" class="experience__list--main">Business oriented</a></li>
       </ul>
       <div class="experience__description">
         <div class="experience__card">
@@ -82,40 +102,84 @@
     </div>
 
     <div class="services">
-      <div class="services__">
-        <a class="services__link" href="#">services</a>
-        <h2 class="services__tittle">What can we do better than others?</h2>
-      </div>
+      <a class="services__link" href="#">services</a>
+      <h2 class="services__tittle">What can we do better than others?</h2>
       <div class="services__cards">
-        <div class="services__card">
-          <div class="services__card--wrapper-img">
-            <img class="services__card--img" src="img/ecommerce.svg" alt="">
+        <div class="services__description">
+          <div class="wrapper">
+            <img class="services__img" src="img/ecommerce.svg" alt="">
           </div>
-          <h2 class="services__card--tittle"></h2>
-          <p class="services__card--description"></p>
+          <a class="services-card__tittle" href="#">IT and e-commerce</a>
+          <p class="services-card__description">
+            An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you
+            from
+            doing business. But there is not much work to do to hire an in-house lawyer.
+          </p>
+        </div>
+        <div class="services__description">
+          <div class="wrapper">
+            <img class="services__img" src="img/support.svg" alt="">
+          </div>
+          <a class="services-card__tittle" href="#">Comprehensive daily legal support</a>
+          <p class="services-card__description">
+            In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we
+            know very well how difficult it is to find a good candidate with experience in the field of information
+            technology in Ukraine.
+          </p>
+        </div>
+        <div class="services__description">
+          <div class="wrapper">
+            <img class="services__img" src="img/coprorate.svg" alt="">
+          </div>
+          <a class="services-card__tittle" href="#">Structuring corporate relationships</a>
+          <p class="services-card__description">
+            Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily
+            life of your company.
+          </p>
+        </div>
+        <div class="services__description">
+          <div class="wrapper">
+            <img class="services__img" src="img/trust.svg" alt="">
+          </div>
+          <a class="services-card__tittle" href="#">Building contractual relations</a>
+          <p class="services-card__description">
+            Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it
+            at the coffee maker and just talk about current affairs instead of waiting for update status.
+          </p>
+        </div>
+        <div class="services__description">
+          <div class="wrapper">
+            <img class="services__img" src="img/protection.svg" alt="">
+          </div>
+          <a class="services-card__tittle" href="#">Protection of business, intellectual property</a>
+          <p class="services-card__description">
+            And all the other time he will work on new diverse projects, so he will definitely not stop in professional
+            development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.
+          </p>
+        </div>
+        <div class="services__description">
+          <div class="wrapper">
+            <img class="services__img" src="img/layer.svg" alt="">
+          </div>
+          <a class="services-card__tittle" href="#">Judicial representation</a>
+          <p class="services-card__description">
+            Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have
+            your own legal department or not?
+          </p>
         </div>
       </div>
     </div>
-
-    <div>
-      <div>
-        <img src="#" alt="">
-      </div>
-      <h2></h2>
-      <p></p>
-    </div>
   </div>
 
-  </div>
-
-  </div>
 
 
   <!--Карточка с чуваком-->
 
   <div class="team">
     <div class="team__card">
-      <img class="team__card--img" src="img/alexandr_card.jpg" alt="">
+      <div>
+        <img class="team__card--img" src="img/alexandr_card.jpg" alt="">
+      </div>
       <div class="team__wrapper">
         <a class="team__card--link" href="#">команда</a>
         <h2 class="team__card--tittle">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну
@@ -124,7 +188,11 @@
         <span class="team__card--job">Керуючий партнер</span>
       </div>
     </div>
-    <div></div>
+    <ul class="l-dots">
+      <li><a href="#" class="c-dot"></a></li>
+      <li><a href="#" class="c-dot c-dot--active"></a></li>
+      <li><a href="#" class="c-dot"></a></li>
+    </ul>
   </div>
 
   <!-- GRID -->
