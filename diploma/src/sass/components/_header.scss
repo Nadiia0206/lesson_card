@@ -52,7 +52,7 @@
 		top: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		z-index: 0;
+		// z-index: 1;
 	}
 }
 
@@ -110,6 +110,10 @@
 
 	&--active {
 		background-color: $color__accent;
+
+		&:hover {
+			background-color: $color__accent;
+		}
 	}
 }
 
@@ -222,6 +226,7 @@
 .header__logo {
 	display: block;
 	z-index: 5;
+	box-sizing: border-box;
 
 	@media screen and (min-width: 1024px) {
 		transform: translateY(-40px);
@@ -232,12 +237,66 @@
 	}
 }
 
+.b-crumb {
+	display: grid;
+	grid-template-columns: 1fr(10%) 1fr;
+
+	&__svg {
+		transform: translateX(5px) translateY(5px);
+	
+		@media screen and (min-width: 820px) {
+			transform: translateX(1px) translateY(10px);
+		}
+
+		@media screen and (min-width: 1024px){
+			transform: translateX(80px) translateY(-35px);
+		}
+
+		@media screen and (min-width: 1920px){
+			transform: translateX(160px) translateY(-35px);
+		}
+	}
+
+
+	@media screen and (min-width: 768px) {
+		grid-template-columns: 20% 5% 10%;
+	}
+}
+
+
+.b-crumb__span {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+
+	@media screen and (min-width: 768px) {
+		font-size: 36px;
+		line-height: 44px;
+	}
+
+	@media screen and (min-width: 820px) {
+		transform: translateX(-1px) translateY(-5px);
+	}
+
+	@media screen and (min-width: 1024px){
+		transform: translateX(90px) translateY(-45px);
+	}
+
+	@media screen and (min-width: 1920px){
+		transform: translateX(165px) translateY(-45px);
+	}
+}
+
 .l-menu-wrapper {
 	position: fixed;
 	top: 0;
+	left: 0;
 	height: 100%;
 	width: 100%;
 	display: none;
+	z-index: 5;
 
 	&::before {
 		content: "";
@@ -246,7 +305,6 @@
 		top: 0;
 		height: 100%;
 		width: 100%;
-		z-index: -1;
 	}
 }
 
@@ -256,15 +314,92 @@
 	left: 50%;
 	width: calc(100% - 16px);
 	transform: translateX(-50%);
+	padding: 12px;
 
 	background: white;
 	border-radius: 12px 12px 0px 0px;
+	z-index: 12;
+}
+
+.l-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+
+	&__mobile {
+		display: inline-block;
+		color: $color__active--regular;
+		padding: 7px 0;
+		background-color: $background__grey--bg;
+		border-radius: 12px;
+		width: 100%;
+
+		&--active {
+			background-color: $color__grey--separator;
+		}
+
+		&--current {
+			color: $color__accent;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+		gap: 10px;
+		font-size: 16px;
+		line-height: 20px;
+		transform: translateX(-10px);
+	}
+
+	@media screen and (min-width: 1024px) {
+		justify-content: end;
+		padding-right: 12px;
+	}
+
+	@media screen and (min-width: 1920px) {
+		padding-right: 110px;
+	}
+}
+
+.l-menu__mobile {
+
+	@media screen and (min-width: 768px) {
+		padding: 0;
+		display: flex;
+		background-color: transparent;
+		color: white;
+		border-radius: 0;
+	}
+
+
+}
+
+.l-menu {
+	@media screen and (min-width: 1440px) {
+		&__hover:hover {
+			border-bottom: 2px solid white;
+		}
+
+		&__hover--current {
+			color: $color__accent;
+			border-bottom: 2px solid $color__accent;
+
+			&:hover {
+				border-bottom: 2px solid $color__accent;
+			}
+		}
+	}
 }
 
 .c-close {
 	display: block;
 	margin-left: auto;
 	cursor: pointer;
+	margin-bottom: 20px;
 }
 
 #menu-toggle {
@@ -272,6 +407,7 @@
 }
 
 .burger__svg {
+	position: relative;
 	z-index: 5;
 }
 
@@ -294,35 +430,6 @@
 		background: transparent;
 		transform: translateX(0);
 	}
-
-	.l-menu {
-		display: flex;
-		gap: 10px;
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 20px;
-
-		@media screen and (min-width: 1024px) {
-			justify-content: end;
-			padding-right: 30px;
-		}
-
-		@media screen and (min-width: 1440px) {
-			&__hover:hover {
-				border-bottom: 2px solid white;
-			}
-
-			&__hover--active {
-				color: $color__accent;
-				border-bottom: 2px solid $color__accent;
-			}
-		}
-
-		@media screen and (min-width: 1920px) {
-			padding-right: 130px;
-		}
-	}
-
 }
 
 #menu-toggle:checked~.l-menu-wrapper {
@@ -338,7 +445,7 @@
 	font-size: 38px;
 	font-weight: 700;
 	line-height: 46px;
-	z-index: 2;
+	z-index: 1;
 
 	&--scroll {
 		position: absolute;
@@ -346,7 +453,15 @@
 		left: 50%;
 		transform: translateX(-50%);
 		outline: none;
-		z-index: 3;
+		z-index: 1;
+
+		@media screen and (min-width: 1440px) {
+
+			&:hover svg>*,
+			&:focus svg>* {
+				stroke: $color__accent;
+			}
+		}
 	}
 }
 
@@ -362,7 +477,20 @@
 	}
 
 	@media screen and (min-width: 1024px) {
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (min-width: 1440px) {
+		padding-left: 180px;
+		padding-right: 180px;
+		transform: translateX(-60px);
+	}
+
+	@media screen and (min-width: 1920px) {
+		padding-left: 280px;
+		padding-right: 280px;
+		transform: translateX(-130px);
 	}
 
 	&__list {
@@ -383,13 +511,15 @@
 		line-height: 46px;
 
 		@media screen and (min-width: 768px) {
-			margin-bottom: 60px;
 			min-width: calc(100% + 60px);
+			margin-bottom: 0;
 		}
 
 		@media screen and (min-width: 1024px) {
 			flex-direction: column;
-
+			align-items: flex-end;
+			padding-right: 120px;
+			justify-content: center;
 		}
 
 		&::-webkit-scrollbar {
@@ -398,6 +528,12 @@
 
 		&--main {
 			color: $color__grey--text;
+
+			@media screen and (min-width: 1440px) {
+				&:hover {
+					color: $color__accent;
+				}
+			}
 		}
 
 		&--active {
@@ -416,8 +552,16 @@
 		}
 
 		@media screen and (min-width: 1024px) {
-			display: flex;
+			border-top: none;
+			padding-top: 0;
+			border-left: 4px solid rgba(255, 255, 255, 0.3); 
+			padding-left: 60px;
+		}
 
+		@media screen and (min-width: 1440px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 
 	}
@@ -429,6 +573,11 @@
 			font-size: 20px;
 			line-height: 24px;
 			color: white;
+
+			@media screen and (min-width: 768px) {
+				font-size: 30px;
+				line-height: 37px;
+			}
 		}
 
 		&--description {
@@ -492,6 +641,8 @@
 		margin-bottom: 30px;
 	}
 
+
+
 	&__cards {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -529,6 +680,12 @@
 	line-height: 27px;
 	color: $color__active--regular;
 	margin-bottom: 15px;
+
+	@media screen and (min-width: 1440px) {
+		&--hover:hover {
+			color: $color__accent;
+		}
+	}
 }
 
 .services-card__description {

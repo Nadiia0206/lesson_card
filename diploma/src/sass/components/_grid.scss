@@ -71,6 +71,7 @@
 		color: $color__main;
 		margin-bottom: 30px;
 		text-align: center;
+		margin-top: 60px;
 	}
 
 	@media screen and (min-width: 568px) {
@@ -91,7 +92,7 @@
 
 	@media screen and (min-width: 1920px) {
 		border-radius: 12px;
-		margin: 0 100px;
+		margin: 0 100px 60px 100px;
 		overflow: hidden;
 	}
 }

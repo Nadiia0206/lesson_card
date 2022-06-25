@@ -1,0 +1,21 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+@use '../components/header';
+@use '../components/grid';
+@use '../components/footer';
+
+html {
+	font-family: 'Montserrat',  Arial, Helvetica, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	color: white;
+}
+
+*, *::after, *::before {
+	box-sizing: border-box;
+  }
