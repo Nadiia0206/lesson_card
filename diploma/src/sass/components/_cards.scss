@@ -34,6 +34,11 @@
       background: $background__gradient--redtext;
       background-clip: text;
       color: transparent;
+
+      @media screen and (min-width: 768px) {
+        font-size: 38px;
+        line-height: 46px;
+      }
     }
   }
 

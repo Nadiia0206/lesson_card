@@ -25,18 +25,37 @@
 		overflow: hidden;
 		margin-bottom: 30px;
 
+		@media screen and (min-width: 1024px) {
+			&--cover {
+				position: relative;
+				width: 400px;
+				flex-shrink: 0;
+			}
+		}
+
 		&--img {
+			// position: absolute;
 			object-fit: cover;
 			width: 100%;
 			height: 500px;
+			
 
 			@media screen and (min-width: 1024px) {
 				height: 100%;
+				position: absolute;
+				top: 0;
+			    left: 0;
 			}
 		}
 
 		@media screen and (min-width: 1024px) {
 			flex-direction: row;
+
+			&--cover {
+				position: relative;
+				width: 400px;
+				flex-shrink: 0;
+			}
 		}
 	}
 
@@ -67,6 +86,11 @@
 		background-clip: text;
 		color: transparent;
 		margin-bottom: 30px;
+
+		@media screen and (min-width: 768px) {
+			font-size: 38px;
+			line-height: 46px;
+		}
 	}
 
 	&__card--name {
